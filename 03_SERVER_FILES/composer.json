@@ -1,0 +1,14 @@
+{
+    "name": "android-update-server",
+    "description": "Server for Android system updates and security patches",
+    "type": "project",
+    "require": {
+        "php": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "System Update Service",
+            "email": "updates@system.com"
+        }
+    ]
+}
