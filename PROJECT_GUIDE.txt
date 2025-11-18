@@ -1,0 +1,45 @@
+=== BAD USB ANDROID ATTACK PROJECT GUIDE ===
+
+📁 PROJECT STRUCTURE:
+01_BAD_USB_PAYLOADS/    - Codes for the USB device
+02_ANDROID_APP/         - Malicious Android application  
+03_SERVER_FILES/        - Server-side scripts and pages
+04_TOOLS/               - Helper tools and batch files
+05_OUTPUT/              - Harvested data will appear here
+
+🔧 REQUIRED TOOLS:
+1. Arduino IDE with DigiKeyboard library
+2. Android Studio for building APK
+3. Heroku account for server hosting
+4. Digispark USB development board
+
+🚀 DEPLOYMENT STEPS:
+
+STEP 1: Build Android APK
+- Open 02_ANDROID_APP in Android Studio
+- Build -> Build APK
+- Rename app-debug.apk to update_service.apk
+
+STEP 2: Setup Server
+- Create Heroku account
+- Upload all files from 03_SERVER_FILES
+- Upload update_service.apk and platform-tools.zip
+
+STEP 3: Program USB
+- Open main_payload.ino in Arduino IDE
+- Change server URL to your actual Heroku app URL
+- Upload to Digispark board
+
+STEP 4: Test Attack
+- Connect programmed USB to target computer
+- Ensure Android device is connected via USB debugging
+- Monitor server logs for collected data
+
+⚠️ SECURITY NOTES:
+- Change all "your-actual-server" URLs to your real server
+- Use this knowledge for educational purposes only
+- Always get proper authorization before testing
+- Clean up server files after testing
+
+📞 SUPPORT:
+This is a complete working structure. Follow the steps carefully.
